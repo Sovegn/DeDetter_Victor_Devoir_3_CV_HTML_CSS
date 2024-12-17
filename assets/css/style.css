@@ -54,6 +54,7 @@ header {
     display: grid;
     grid-template-columns: 150px 1fr 150px;
     align-items: center;
+    padding-left: 8%;
 }
 .profile-image {
     grid-column: 1;
@@ -106,6 +107,7 @@ header {
     min-width: 250px;
     background-color: #e3e3e3;
     padding-left:30px;
+    padding-right: 20px;
 }
 section {
     margin-bottom: 30px;
@@ -124,10 +126,10 @@ section h2 {
     flex-direction: column;
     gap: 10px;
 }
-.skill-bar {
+.skills-bar {
     display: flex;
-    flex-direction:row;
-    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
 }
 .rating{
     color: #17abb3;
@@ -186,4 +188,30 @@ section h2 {
     min-width: 150px;
     text-align: right;
     padding-left: 15px;
+}
+
+footer {
+    background-color: #17abb3;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+.social-link {
+    color: white;
+    text-decoration: none;
+    opacity: 1;
+    transition: opacity 0.3s;
+    font-size: 2.2em;
+    margin: 0 15px;
+}
+.social-link:hover {
+    opacity: 0.8;
+}
+
+.last-update {
+    text-align: center;
+    font-size: 0.8em;
+    color: #ffffff;
 }
